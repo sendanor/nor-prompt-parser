@@ -14,7 +14,7 @@ npm install --save nor-prompt-parser
 
 ## Usage
 
-TODO
+See [tests][test/PromptParser.test.js].
 
 ## License
 
