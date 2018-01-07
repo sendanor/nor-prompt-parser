@@ -1,0 +1,52 @@
+{
+  "name": "nor-prompt-parser",
+  "version": "1.0.0",
+  "description": "Base implementation for parsers",
+  "main": "dist/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "compile": "babel src --out-dir dist/src --presets=es2015",
+    "compile-examples": "babel examples --out-dir dist/examples --presets=es2015",
+    "compile-watch": "babel --watch src --out-dir dist/src --presets=es2015",
+    "compile-docs": "jsdoc --verbose --pedantic -c jsdoc.json",
+    "prepublish": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sendanor/nor-prompt-parser.git"
+  },
+  "keywords": [
+    "parser",
+    "cli",
+    "json",
+    "javascript",
+    "js",
+    "command"
+  ],
+  "author": "Jaakko-Heikki Heusala <jheusala@iki.fi>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sendanor/nor-prompt-parser/issues"
+  },
+  "homepage": "https://github.com/sendanor/nor-prompt-parser#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "coveralls": "^3.0.0",
+    "docdash": "^0.4.0",
+    "jsdoc": "^3.5.5",
+    "mocha": "^3.5.3",
+    "mocha-lcov-reporter": "^1.3.0",
+    "nyc": "^11.2.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "nor-debug": "^1.0.0",
+    "nor-generic-parser": "^1.0.0"
+  }
+}
